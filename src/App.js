@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter} from 'react-router-dom'
+import { BrowserRouter, Switch, Route} from 'react-router-dom'
+
+import Navbar from './components/layout/Navbar'
+import Dashboard from './components/dashboard/Dashboard';
 
 
 class App extends Component {
@@ -7,7 +10,10 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-            <h1>Project Planer</h1>
+          <Navbar />
+          <Switch>
+            <Route path='/' component={Dashboard}/>
+          </Switch>
         </div>
       </BrowserRouter>
     );
