@@ -11,10 +11,6 @@ const ProjectDetails = (props)  => {
     if(project) {
         return (
         <div className="container section project-details">
-        <div className="action-wrapper right">
-            <div className="btn-floating btn-small blue"><i className="large material-icons">mode_edit</i></div>
-            <div className="btn-floating btn-small blue"><i className="large material-icons">delete</i></div>
-        </div>
             <div className="card z-depth-0">
                 <span className="card-title">{ project.title }</span>
                 <p>{ project.content }</p>
